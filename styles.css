@@ -1520,7 +1520,9 @@ header {
   margin-bottom: 0.5rem;
   background: linear-gradient(45deg, var(--color-1), var(--color-2));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: var(--color-1); /* Color de respaldo para navegadores que no soporten background-clip: text */
 }
 
 .brand-slogan {
